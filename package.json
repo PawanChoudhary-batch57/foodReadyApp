@@ -2,9 +2,9 @@
   "name": "foodready",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "Server.js",
   "scripts": {
-    "start": "node App.js",
+    "start": "node Server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "client":"npm start --prefix frontend",
     "dev":"concurrently \"npm start\" \"npm run client\""
