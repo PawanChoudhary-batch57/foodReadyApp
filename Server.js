@@ -23,7 +23,7 @@ const orderRoutes= require('./routes/order')
 const app=express()
 //db
 mongoose
-  .connect(process.env.DATABASE, {})
+  .connect('mongodb+srv://pawanchoudhary1989:kapati1989@cluster0.thecmra.mongodb.net/test', {})
   .then(() => console.log("DB connected"))
   .catch((err) => console.log("DB Error => ", err));
 
