@@ -23,7 +23,7 @@ const orderRoutes= require('./routes/order')
 const app=express()
 //db
 mongoose
-  .connect('process.env.DATABASE', {})
+  .connect(process.env.DATABASE, {})
   .then(() => console.log("DB connected"))
   .catch((err) => console.log("DB Error => ", err));
 
@@ -50,7 +50,7 @@ app.get('*',function(req,res){
 })
 
 
-const port=process.env.PORT||8000
+const port=process.env.PORT||8080
 
 app.listen(port,()=>{
     console.log(`Server is running on port${port}`)
